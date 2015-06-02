@@ -95,6 +95,11 @@ pelas<-ggplot(data=data,aes(x=ParameterName,y=Elasticity)) + geom_bar(stat="iden
 		theme(axis.text.x=element_text(size=10, angle=20, hjust=1)) +
 		labs(x="Parameter",y="Elasticity (units of SD)")
 
+jpeg(filename="//prbo.org/Data/Home/Petaluma/lsalas/Documents/lsalas/antarctica/paper/figures/FigureS3_elasticitiesMass.jpg",
+		width=400, height=350,quality=100)
+print(pelas)
+dev.off()
+
 
 ## Partial r-squared
 sse_full<-deviance(sens_pct)
