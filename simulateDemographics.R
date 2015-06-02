@@ -16,11 +16,10 @@ library(splines)
 pth.obj<-"c:/users/lsalas/workspace/PRBOGeneralUpdate/WESE/DemogObjects/"
 pth.mdl<-"c:/users/lsalas/workspace/PRBOGeneralUpdate/WESE/"
 
-################################### Specify simulation ####################
+################################### Specify simulation dive limit ####################
 diveLim="80p"	#options: "50p", "62.5p" and "80p"
 
-## Need path to general results, and to weight gain results summarized
-
+## Need path to general results, and to weight gain results summarized (see summarizeDivingResults.R)
 pth.res<-"//prbo.org/Data/Home/Petaluma/lsalas/Documents/lsalas/Antarctica/Results/diving/final/results/"
 pthWeights<-paste("//prbo.org/Data/Home/Petaluma/lsalas/Documents/lsalas/Antarctica/Results/diving/final/",diveLim,"_wtgain.RData",sep="")
 
